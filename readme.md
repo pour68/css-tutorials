@@ -1,0 +1,587 @@
+# CSS
+
+![css Tutorials](https://github.com/pour68/css-tutorials/blob/master/images/css-header.jpg "css Tutorials")
+
+## History
+
+- Founder: w3c (Wium Lie and Bert Bos)
+- Birthdate: 17 December 1996
+- versions: css1 - css2 - css2.1 - css3 - css4
+- Goals: style web pages
+- Mime-type: text/css
+
+---
+
+## CSS definition
+
+Cascading stylesheet
+
+---
+
+## CSS Analogy
+
+- Interface of building
+- Interface of human-body
+
+---
+
+## CSS file extension
+
+.css
+
+---
+
+## Selectors
+
+- Global
+- Element
+- Class
+- Id
+- Attribute
+
+---
+
+## Syntax
+
+selector {
+    property: value;
+}
+
+---
+
+## CSS reference methods
+
+- inline
+- internal
+- external
+
+---
+
+## override CSS property
+
+!important
+
+---
+
+## Comments
+
+- ``` /*comment*/ ```
+
+---
+
+## Color
+
+- name
+- hex
+- rgb - rgba
+- hsl - hsla
+
+---
+
+## Box-Model
+
+### width - min-width - max-width
+
+### height - min-height - max-height
+
+### padding
+
+- padding-top
+- padding-right
+- padding-bottom
+- padding-left
+- padding
+
+### margin
+
+- margin-top
+- margin-right
+- margin-bottom
+- margin-left
+- margin
+
+### border
+
+- border-width
+- border-style
+- border-color
+- border: border-width border-style border-color
+
+### outline
+
+- outline-width
+- outline-style
+- outline-color
+- outline-offset
+- outline: outline-width outline-style outline-color
+
+---
+
+## Background
+
+- background-color: color
+- background-image: url(address)
+- background-size: contain | cover | auto | width height
+- background-position: top | left | right | center | posX posY
+- background-attachment: local | scroll | fixed
+- background-repeat: no-repeat | repeat-x | repeat-y | round | space
+- background-clip: content-box | padding-box | border-box
+- background-origin: content-box | padding-box | border-box
+- background-blend-mode
+
+---
+
+## Box-sizing
+
+- box-sizing: border-box
+
+Defines how the width and height of an element are calculated: should they include padding and borders, or not.
+
+---
+
+## Text
+
+- color
+- text-align: left | center | right | justify
+- text-align-last: left | center | right | justify
+- direction: ltr | rtl
+- unicode-bidi: embed | bidi-override | isolated | isolated-override | plaintext;
+- vertical-align: baseline | sub | super | text-top | text-bottom
+- text-decoration: dashed | dotted | double | line-through | overline | underline | wavy | none
+- text-transform: uppercase | lowercase | capitalize
+- text-spacing
+  - text-indent
+  - letter-spacing
+  - line-height
+  - word-spacing
+  - white-space: normal(D) | nowrap | pre | pre-line | pre-wrap
+- text-shadow: h-shadow v-shadow blur color
+- writing-mode: horizontal-tb|vertical-rl|vertical-lr
+
+---
+
+## Fonts
+
+- font-family
+  - generic font families: serif - sans-serif - monospace - cursive - fantasy
+  - web safe fonts
+    - fallback
+    - Arial (sans-serif) - Verdana (sans-serif)- Tahoma (sans-serif)- Trebuchet MS (sans-serif)- Times New Roman (serif)- Georgia (serif)- Garamond (serif)- Courier New (monospace)- Brush Script MT (cursive)
+- font-style: normal | italic | oblique
+- font-size: 16px | 1rem | 1em | 10vw
+- font-weight: lighter | normal | bold | bolder | 100-900
+- font-variant: normal | small-caps
+- font-variant-caps: normal|small-caps|all-small-caps|petite-caps|all-petite-caps|unicase|titling-caps
+- font: font-style font-variant font-weight font-size/line-height font-family
+- google fonts and font effects
+
+- [Google fonts](https://fonts.google.com/)
+
+---
+
+## Css directives
+
+@import "address";
+@charset "UTF-8";
+
+---
+
+## Units
+
+- absolute (px inch)
+- relative (% vh vw em rem)
+
+---
+
+## Icons
+
+- [Font awesome icons](https://fontawesome.com/icons)
+- [Bootstrap icons](https://icons.getbootstrap.com/)
+- [Material icons](https://www.w3schools.com/icons/google_icons_intro.asp)
+- [Box icons](boxicons.com)
+- [Remix icon](remixicon.com/)
+- [Ion icon](ionic.io/)
+
+---
+
+## Pseudo class
+
+---
+
+## Links
+
+:link - :visited - :hover - :active
+cursor: default | crosshair | e-resize | help | move | n-resize | ne-resize | nw-resize | pointer | progress | s-resize | se-resize | sw-resize | text | w-resize | wait
+
+---
+
+## Pseudo element
+
+---
+
+## List
+
+- list-style-type: disk | circle | square | none | armenian | lower-alpha | lower-green | lower-latin| lower-roman | upper-alpha | upper-latin | upper-roman | georgian | symbols()
+- list-style-image: url(address)
+- list-style-position: inside | outside (D)
+
+- The list-style-position property specifies the position of the list-item markers (bullet points).
+
+---
+
+## Table
+
+- border-collapse : separate (D) | collapse
+- border-spacing: h-space v-space
+- caption-side: top (D) | bottom
+- empty-cells: show | hide
+- table-layout: auto | fixed
+
+- border-spacing: Specifies the distance between the borders of adjacent cells
+- table-layout: Sets the layout algorithm to be used for a table
+
+---
+
+## Overflow
+
+- overflow-x
+- overflow-y
+- overflow: hidden | scroll | visible
+
+---
+
+## Display
+
+display: inline - inline-block - block - flex - grid - table
+
+---
+
+## Visibility
+
+visibility: visible (D) | hidden
+
+---
+
+## Position
+
+position: static | relative | absolute | fixed | sticky
+
+---
+
+## Z-index
+
+---
+
+## Clip path
+
+clip-path
+
+---
+
+## Float
+
+float: none | left | right | inline-start | inline-end;
+clear: left | right | both
+
+---
+
+## Opacity
+
+opacity: 0-1
+
+---
+
+## Image Spirits
+
+[Sprite generator](https://www.toptal.com/developers/css/sprite-generator/)
+
+---
+
+## Filter
+
+filter: none | blur(px) | brightness(%) | contrast(%) | drop-shadow(h-shadow v-shadow blur spread color) | grayscale(%) | hue-rotate(deg) | invert(%) | opacity(%) | saturate(%) | sepia(%) | url();
+
+---
+
+## Forms
+
+resize: none
+accent-color
+
+---
+
+## Specificity
+
+general selector
+id
+class
+attribute
+
+---
+
+## Math functions
+
+- calc()
+- min() - max() - minmax(,)
+- min-content - max-content
+
+---
+
+## Rounded corners
+
+border-radius: top-left top-right bottom-right bottom-left
+
+---
+
+## Shadows
+
+box-shadow: h-shadow v-shadow blur padding color;
+
+---
+
+## Object-fit
+
+object-fit: fill (D) | contain | cover | none | scale-down
+
+- object-fit: Specifies how an img or video should be resized to fit its container
+
+---
+
+## Object-position
+
+object-position: 50% 50%; center of image till end
+
+- object-position: Specifies how an img or video should be positioned with x/y coordinates inside its "own content box"
+
+---
+
+## Columns
+
+- column-count: number
+- column-fill: auto | balance
+- column-gap: 1rem
+- column-rule: width style color
+- column-rule-width: 1px
+- column-rule-style: solid
+- column-rule-color: skyblue
+- column-width
+- column-span: all | none
+- column: column-width column-count
+
+- column-span: Specifies how many columns an element should span across
+
+---
+
+## CSS 2D and 3D transforms
+
+- transform: rotate(clockwise - non-clockwise)
+- transform: scale(x,y) - scaleX(x) - scaleY(y)
+- transform: translate(x,y) - translateX(x) - translateY(y)
+- transform: skew(x-angle,y-angle) - skewX(x-angle) - skewY(y-angle)
+- transform: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+
+- transform: rotate3d(x,y,z,angle) - rotateX(angle) - rotateY(angle) - rotateZ(angle)
+- transform: translate3d(x,y,z) - translateZ()
+- transform: scale3d(x,y,z) - scaleX(x) - scaleY(y) - scaleZ(z)
+- perspective(n)
+- transform-origin: x-axis y-axis z-axis
+- transform-style: preserve-3d
+- perspective
+- perspective-origin
+- backface-visibility
+
+- transform-origin: Allows you to change the position on transformed elements
+- perspective-origin: Specifies the bottom position of 3D elements
+- backface-visibility: Defines whether or not an element should be visible when not facing the screen
+
+---
+
+## Transition
+
+- transition-delay
+- transition-duration
+- transition-property
+- transition-timing-function: linear | ease | ease-in - ease-out - ease-in-out - cubic-bezier(n,n,n,n)
+- transition: property duration timing-function delay
+
+---
+
+## Animations
+
+animation-name: name
+animation-duration: 12s
+animation-delay: 1s
+animation-direction: reverse | alternate | alternate-reverse
+animation-iteration-count: -1 | count
+animation-fill-mode: forwards | backward | both | none
+animation-timing-function: linear | ease | ease-in - ease-out - ease-in-out | step-start | step-start | steps(int,start|end)
+animation-play-state: paused | running
+animation: name duration timing-function delay iteration-count direction fill-mode play-state
+
+@keyframes animation-name {
+  from {}
+  to   {}
+}
+
+---
+
+## Variable
+
+:root {
+    --white-color: #fff;
+}
+
+selector {
+    color: var(--white-color);
+}
+
+---
+
+## Backdrop-filter
+
+- blur(px)
+- brightness(%)
+- contrast(%)
+- drop-shadow(h-shadow v-shadow blur color)
+- grayscale(%)
+- hue-rotate(deg)
+- invert(%)
+- opacity(%)
+- sepia(%)
+- saturate(%)
+
+---
+
+## FlexBox
+
+- justify-content: flex-start|flex-end|center|space-between|space-around|space-evenly
+- align-items: stretch|center|flex-start|flex-end|baseline
+- flex-direction
+- flex-wrap
+- flex-flow: direction wrap;
+
+- order
+- flex-basis
+- flex-grow
+- flex-shrink
+- flex: grow shrink basis
+- align-self
+- justify-self
+
+---
+
+## Grid
+
+- grid-row-gap - grid-column-gap - grid-gap
+- grid-template-columns - grid-template-rows
+- grid-auto-columns - grid-auto-rows
+- grid-template-areas: "name name name" "name2 name1 name1" ...
+- justify-content: flex-start|flex-end|center|space-between|space-around|space-evenly
+- align-items: stretch|center|flex-start|flex-end|baseline
+
+- grid-area: name
+- grid-column - grid-row
+- grid-column-start - grid-column-end - grid-row-start - grid-row-end
+- align-self
+- justify-self
+
+---
+
+## Media
+
+@media (max-width: 768px) {}
+@media (min-width: 768px) {}
+
+---
+
+## Gradients
+
+### Linear gradients
+
+- background-image: linear-gradient(direction, color-stop1, color-stop2, ...)
+  - background-image: linear-gradient(red, blue)
+  - background-image: linear-gradient(to right, red, blue)
+  - background-image: linear-gradient(to right bottom, red, blue)
+- background-image: linear-gradient(angle, color-stop1, color-stop2, ...)
+  - background-image: linear-gradient(180deg, red, yellow);
+- background-image: repeating-linear-gradient(color-stop1, color-stop2, ...)
+  - background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+
+### Radial gradients
+
+- background-image: radial-gradient(shape size at position, start-color, ..., last-color)
+  - background-image: radial-gradient(red, yellow, green)
+  - background-image: radial-gradient(red 5%, yellow 15%, green 60%)
+  - background-image: radial-gradient(circle, red, yellow, green)
+  - background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black)
+- background-image: repeating-radial-gradient(start-color, ..., last-color)
+  - background-image: repeating-radial-gradient(red, yellow 10%, green 15%)
+
+- size-parameter for gradient: closest-side | farthest-side | closest-corner | farthest-corner
+
+### Conic gradients
+
+- background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...)
+  - background-image: conic-gradient(red, yellow, green)
+  - background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg)
+  - background-image: conic-gradient(at 60% 45%, red, yellow, green);
+  - background-image: repeating-conic-gradient(red 10%, yellow 20%);
+  - background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+
+---
+
+## Image Reflection
+
+-webkit-box-reflect: below | above | left | right
+
+---
+
+## Masking
+
+- mask-image: url() | linear-gradient()
+- mask-mode: luminance | alpha
+- mask-origin: content-box | border-box
+- mask-position: left right top center bottom | direction direction | posX posY | % %
+- mask-repeat: no-repeat | repeat
+- mask-size: %
+
+---
+
+## Border image
+
+- border-image-source: url(address);
+- border-image-slice: number | % | fill
+- border-image-width: number | % | auto
+- border-image-outset: length| number
+- border-image-repeat: stretch | repeat | round | space
+- border-image: source slice width outset repeat|initial|inherit
+
+---
+
+## Counters
+
+ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+li::before {
+  content: counters(section,".") " ";
+  counter-increment: section;
+}
+
+---
+
+## User select
+
+``` -webkit-user-select: none; /*Safari*/ ```
+``` -ms-user-select: none; /*IE 10 and IE 11*/ ```
+``` user-select: none; /*Standard syntax*/ ```
+
+---
+
+## Pointer events
+
+- pointer-events: none| auto
+
+- Set whether or not an element should react to pointer events
