@@ -10,6 +10,8 @@
 - Goals: style web pages
 - Mime-type: text/css
 
+![authors](https://github.com/pour68/css-tutorials/blob/master/images/authors.jpg "authors")
+
 ---
 
 ## CSS definition
