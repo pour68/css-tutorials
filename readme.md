@@ -169,7 +169,7 @@ Defines how the width and height of an element are calculated: should they inclu
   - generic font families: serif - sans-serif - monospace - cursive - fantasy
   - web safe fonts
     - fallback
-    - Arial (sans-serif) - Verdana (sans-serif)- Tahoma (sans-serif)- Trebuchet MS (sans-serif)- Times New Roman (serif)- Georgia (serif)- Garamond (serif)- Courier New (monospace)- Brush Script MT (cursive)
+    - Arial (sans-serif) - Verdana (sans-serif) - Tahoma (sans-serif) - Trebuchet MS (sans-serif) - Times New Roman (serif) - Georgia (serif) - Garamond (serif) - Courier New (monospace) - Brush Script MT (cursive)
 - font-style: normal | italic | oblique
 - font-size: 16px | 1rem | 1em | 10vw
 - font-weight: lighter | normal | bold | bolder | 100-900
