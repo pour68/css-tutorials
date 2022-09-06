@@ -129,7 +129,8 @@ selector {
 - background-repeat: no-repeat | repeat-x | repeat-y | round | space
 - background-clip: content-box | padding-box | border-box
 - background-origin: content-box | padding-box | border-box
-- background-blend-mode
+- background: color image repeat attachment position
+- background-blend-mode: normal|multiply|screen|overlay|darken|lighten|color-dodge|saturation|color|luminosity
 
 ---
 
@@ -208,6 +209,12 @@ Defines how the width and height of an element are calculated: should they inclu
 
 ## Pseudo class
 
+:hover - :focus - :first-child - :last-child - :nth-child(even|odd|formula) - :nth-of-type(n)  - ...
+
+q:lang(no) {
+  quotes: "~" "~";
+}
+
 ---
 
 ## Links
@@ -218,6 +225,8 @@ cursor: default | crosshair | e-resize | help | move | n-resize | ne-resize | nw
 ---
 
 ## Pseudo element
+
+::before - ::after - ::first-letter - ::first-line - ::selection
 
 ---
 
@@ -314,18 +323,23 @@ accent-color
 
 ## Specificity
 
-general selector
-id
-class
-attribute
+- general selector
+- id
+- class
+- attribute
+  - The [attribute="value"] selector is used to select elements with a specified attribute and value.
+  - [attribute~="value"]: selector is used to select elements with an attribute value containing a specified word.(just space-separated word)
+  - The [attribute|="value"] selector is used to select elements with the specified attribute, whose value can be exactly the specified value, or the specified value followed by a hyphen (-).
+  - The [attribute^="value"] selector is used to select elements with the specified attribute, whose value starts with the specified value.
+  - The [attribute$="value"] selector is used to select elements whose attribute value ends with a specified value.
+  - The [attribute*="value"] selector is used to select elements whose attribute value contains a specified value.
 
 ---
 
 ## Math functions
 
 - calc()
-- min() - max() - minmax(,)
-- min-content - max-content
+- min() - max()
 
 ---
 
@@ -571,6 +585,15 @@ li::before {
   content: counters(section,".") " ";
   counter-increment: section;
 }
+
+---
+
+## Combinators
+
+- parent child: The descendant selector matches all elements that are descendants of a specified element.
+- parent > child: The child selector selects all elements that are the children of a specified element.
+- element + element: The adjacent sibling selector is used to select an element that is directly after another specific element.
+- element ~ element: The general sibling selector selects all elements that are next siblings of a specified element.
 
 ---
 
