@@ -80,6 +80,36 @@ selector {
 
 ---
 
+## Color theory
+
+- Monochromatic
+Uses one hue with different saturation and brightness
+- Analogous
+Uses colors that are next to each other on the wheel
+- Complimentary
+Uses color that are opposite sides of the color wheel
+- Triadic
+Uses three colors that are evenly spaced
+
+---
+
+## Color theory tricks
+
+- Harmony: color should work well together using the principles of color theory.
+- Scalable additive: should have multiple shades of grey and law saturated colors, could have a systematic pattern which can be added to as the needs of design system grows.
+- Tint your colors with your brands: Tint your grays and black with a hint of your brand color.
+- Accessible: A color contrast, visual presentation of text must 4:5:1 contrast ratio in every UI components.
+
+---
+
+## Practical color
+
+- Choose your base color: A primary or dominant color of your UI, usually your brand color.
+- Choose swatches near your base color: This color will support hover, active and focus states for the base color in actionable elements such as button, links and form elements.
+- Choose your darkest color and greys: These swatches are most often used an accents, backgrounds, or to give visual weight to a UI element in both dark and light interfaces.
+
+---
+
 ## Box-Model
 
 ### width - min-width - max-width
@@ -178,7 +208,25 @@ Defines how the width and height of an element are calculated: should they inclu
 - font: font-style font-variant font-weight font-size/line-height font-family
 - google fonts and font effects
 
+- [type scale](https://type-scale.com/)
 - [Google fonts](https://fonts.google.com/)
+- [font pair](https://www.pagecloud.com/blog/best-google-fonts-pairings)
+
+---
+
+## Font theory
+
+- Choose a place to find your fonts
+- Product audience and branding
+  - Research your users - understanding their taste and aesthetic
+  - Research your competitors - decide if you want to fit in or stand out
+  - Align product market brand
+- Font scalability
+- Loading time
+- Font attributes
+- Font roles
+- Font fallback
+- Font
 
 ---
 
@@ -191,7 +239,7 @@ Defines how the width and height of an element are calculated: should they inclu
 
 ## Units
 
-- absolute (px inch)
+- absolute (px cm inch)
 - relative (% vh vw em rem)
 
 ---
@@ -286,6 +334,8 @@ position: static | relative | absolute | fixed | sticky
 ## Clip path
 
 clip-path
+
+[Clip path tool](https://bennettfeely.com/clippy/)
 
 ---
 
@@ -610,3 +660,9 @@ li::before {
 - pointer-events: none| auto
 
 - Set whether or not an element should react to pointer events
+
+---
+
+## CSS validation
+
+- [CSS validator](https://jigsaw.w3.org/css-validator/)

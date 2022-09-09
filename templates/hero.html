@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            background-color: #f1ede9;
+            color: #161e32;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .hero__details h3 {
+            color: rgba(13, 28, 28, 0.75);
+            font-size: 0.75rem;
+            line-height: 0;
+        }
+
+        .hero__details h1 {
+            font-size: 8vmin;
+            margin-bottom: 1rem;
+        }
+
+        .hero__details p {
+            font-size: 0.9rem;
+        }
+
+        .hero__figure {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero__figure::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 250px;
+            height: 250px;
+            background-color: #0d1c1c;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .hero__img {
+            position: relative;
+            width: 250px;
+            z-index: 10;
+        }
+
+        .hero__frontend,
+        .hero__backend {
+            position: absolute;
+            background-color: #fff;
+            color: #0d1c1c;
+            width: 275px;
+            border-radius: 0.5rem;
+        }
+
+        .hero__frontend {
+            top: -100px;
+            right: 10px;
+            z-index: 5;
+        }
+
+        .hero__backend {
+            position: absolute;
+            bottom: -100px;
+            left: 0;
+            z-index: 100;
+        }
+
+        .hero__frontend,
+        .hero__content {
+            padding: 1.5rem;
+        }
+
+        .hero__title {
+            border-bottom: 6px solid #0d1c1c;
+            padding-bottom: 0.5rem;
+        }
+
+        .hero__description {
+            margin-top: 0.5rem;
+            text-transform: capitalize;
+        }
+
+        .hero__header {
+            height: 15px;
+            padding: 1rem 0.5rem;
+            display: flex;
+            align-items: center;
+            background-color: #0d1c1c;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+            gap: 0.5rem;
+        }
+
+        .hero__header span {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .hero__header span:nth-child(1) {
+            background-color: red;
+        }
+
+        .hero__header span:nth-child(2) {
+            background-color: orange;
+        }
+
+        .hero__header span:nth-child(3) {
+            background-color: blue;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+                column-gap: 2rem;
+                height: 100%;
+                min-height: 100vh;
+                overflow: auto;
+                gap: 4rem;
+            }
+
+            .hero__details {
+                text-align: center;
+            }
+
+            .hero__frontend,
+            .hero__backend {
+                width: 250px;
+            }
+
+            .hero__frontend,
+            .hero__content {
+                padding: 0.75rem;
+            }
+
+            .hero__title {
+                font-size: 1.1rem;
+            }
+
+            .hero__description {
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+    <title> hero template </title>
+</head>
+
+<body>
+
+    <main class="main" id="main">
+        <div class="hero container">
+
+            <section class="hero__details">
+                <h3>Web scientist</h3>
+                <h1>Pouria Nayeb</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quos, dolores placeat sapiente
+                    tenetur quam fuga iste. Quis, laboriosam et quas impedit nulla accusamus, aperiam eligendi dolorem,
+                    enim veniam mollitia!</p>
+            </section>
+
+            <figure class="hero__figure">
+
+                <img src="../images/pouria-nayeb.png" alt="pouria nayeb" class="hero__img" />
+
+                <div class="hero__frontend">
+                    <h3 class="hero__title">Frontend</h3>
+                    <p class="hero__description">html - css - javaScript - sass - react - next.js</p>
+                </div>
+
+                <div class="hero__backend">
+                    <div class="hero__header">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="hero__content">
+                        <h3 class="hero__title">Backend</h3>
+                        <p class="hero__description">C# - .Net - SQl server</p>
+                    </div>
+                </div>
+
+            </figure>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
