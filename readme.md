@@ -63,6 +63,8 @@ selector {
 
 !important
 
+``` The !important rule in CSS is used to add more importance to a property/value than normal. ```
+
 ---
 
 ## Comments
@@ -78,9 +80,9 @@ selector {
 - rgb - rgba
 - hsl - hsla
 
----
+![color-wheel](https://github.com/pour68/css-tutorials/blob/master/images/color-wheel-bg.jpg "color-wheel")
 
-## Color theory
+### Color theory
 
 - Monochromatic
 Uses one hue with different saturation and brightness
@@ -91,18 +93,14 @@ Uses color that are opposite sides of the color wheel
 - Triadic
 Uses three colors that are evenly spaced
 
----
-
-## Color theory tricks
+### Color theory tricks
 
 - Harmony: color should work well together using the principles of color theory.
 - Scalable additive: should have multiple shades of grey and law saturated colors, could have a systematic pattern which can be added to as the needs of design system grows.
 - Tint your colors with your brands: Tint your grays and black with a hint of your brand color.
 - Accessible: A color contrast, visual presentation of text must 4:5:1 contrast ratio in every UI components.
 
----
-
-## Practical color
+### Practical color
 
 - Choose your base color: A primary or dominant color of your UI, usually your brand color.
 - Choose swatches near your base color: This color will support hover, active and focus states for the base color in actionable elements such as button, links and form elements.
@@ -110,42 +108,130 @@ Uses three colors that are evenly spaced
 
 ---
 
+## Opacity
+
+opacity: 0-1
+
+---
+
+## Units
+
+- absolute (px cm inch)
+- relative (% vh vw em rem)
+
+---
+
 ## Box-Model
 
 ### width - min-width - max-width
 
+width: auto | size | %
+
+- width: is used to set width of an element.
+- min-width: is used to set the minimum width of an element.
+- max-width: is used to set the maximum width of an element.
+
 ### height - min-height - max-height
 
-### padding
+height: auto | size | %
+
+- height: property is used to set height of an element.
+- min-height: is used to set the minimum height of an element.
+- max-height: is used to set the maximum height of an element.
+
+### Padding
+
+Padding is used to create space around an element's content, inside of any defined borders.
 
 - padding-top
 - padding-right
 - padding-bottom
 - padding-left
-- padding
+- padding: top right bottom left | top right/left bottom | top/bottom right/left | top/right/bottom/left
 
-### margin
+---
+
+### Margin
+
+Margins are used to create space around elements, outside of any defined borders.
 
 - margin-top
 - margin-right
 - margin-bottom
 - margin-left
-- margin
+- margin: top right bottom left | top right/left bottom | top/bottom right/left | top/right/bottom/left
 
-### border
+``` margin collapse does not happen on left and right margins, Only top and bottom margins. ```
+
+---
+
+### Border
+
+The CSS border properties allow you to specify the style, width, and color of an element's border.
 
 - border-width
 - border-style
 - border-color
-- border: border-width border-style border-color
+- border: width style color
+- border-direction
+- border-dirrection-width
+- border-dirrection-style
+- border-dirrection-color
 
-### outline
+``` direction: top|right|bottom|left ```
 
-- outline-width
-- outline-style
-- outline-color
-- outline-offset
-- outline: outline-width outline-style outline-color
+#### Border functionality
+
+- border: Sets all the border properties in one declaration
+- border-color: Sets the color of the four borders
+- border-style: Sets the style of the four borders
+- border-width: Sets the width of the four borders
+- border-direction: Sets all the direction border properties in one declaration
+- border-direction-width: Sets the width of the direction border
+- border-direction-style: Sets the style of the direction border
+- border-bottom-color: Sets the color of the direction border
+
+---
+
+### Outline
+
+An outline is a line drawn outside the element's border.
+
+- outline-width: thin|medium|thick|size
+- outline-style: dotted|dashed|solid|double|groove|ridge|inset|outset|outlinenone|hidden
+- outline-color: color
+- outline-offset: size
+- outline: width style color
+
+#### Outline functionality
+
+- outline-width: Sets the width of an outline
+- outline-style: Sets the style of an outline
+- outline-color: Sets the color of an outline
+- outline-offset: Specifies the space between an outline and the edge or border of an element
+- outline: A shorthand property for setting outline-width, outline-style, and outline-color in one declaration
+
+``` None of the other outline properties will have ANY effect unless the outline-style property is set! ```
+
+---
+
+## Rounded corners
+
+border-radius: top-left top-right bottom-right bottom-left
+border-vdirection-hdirection-radius: size
+
+### Rounded corners functionality
+
+- border-radius: A shorthand property for setting all the four border-*-*-radius properties
+- border-vdirection-hdirection-radius: Defines the shape of the border of the vdirection-hdirection corner
+
+---
+
+## Box-sizing
+
+Defines how the width and height of an element are calculated: should they include padding and borders, or not.
+
+- box-sizing: border-box
 
 ---
 
@@ -162,13 +248,20 @@ Uses three colors that are evenly spaced
 - background: color image repeat attachment position
 - background-blend-mode: normal|multiply|screen|overlay|darken|lighten|color-dodge|saturation|color|luminosity
 
----
+### Background functionality
 
-## Box-sizing
+- background-color: Sets the background color of an element
+- background-image: Sets the background image for an element
+- background-position: Sets the starting position of a background image
+- background-repeat: Sets how a background image will be repeated
+- background-attachment: Sets whether a background image is fixed or scrolls with the rest of the page
+- background-size: Specifies the size of the background image(s)
+- background-origin: Specifies where the background image(s) is/are positioned
+- background-clip: Specifies the painting area of the background
 
-- box-sizing: border-box
+### Multiple background image
 
-Defines how the width and height of an element are calculated: should they include padding and borders, or not.
+``` #background-container { background-image: url(img_flwr.gif), url(paper.gif); background-position: right bottom, left top; background-repeat: no-repeat, repeat; } ```
 
 ---
 
@@ -223,10 +316,6 @@ Defines how the width and height of an element are calculated: should they inclu
   - Align product market brand
 - Font scalability
 - Loading time
-- Font attributes
-- Font roles
-- Font fallback
-- Font
 
 ---
 
@@ -234,13 +323,6 @@ Defines how the width and height of an element are calculated: should they inclu
 
 @import "address";
 @charset "UTF-8";
-
----
-
-## Units
-
-- absolute (px cm inch)
-- relative (% vh vw em rem)
 
 ---
 
@@ -346,12 +428,6 @@ clear: left | right | both
 
 ---
 
-## Opacity
-
-opacity: 0-1
-
----
-
 ## Image Spirits
 
 [Sprite generator](https://www.toptal.com/developers/css/sprite-generator/)
@@ -390,12 +466,6 @@ accent-color
 
 - calc()
 - min() - max()
-
----
-
-## Rounded corners
-
-border-radius: top-left top-right bottom-right bottom-left
 
 ---
 
