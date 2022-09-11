@@ -20,7 +20,7 @@ Cascading stylesheet
 
 ---
 
-## CSS Analogy
+## CSS analogy
 
 - Interface of building
 - Interface of human-body
@@ -77,8 +77,17 @@ selector {
 
 - name
 - hex
-- rgb - rgba
-- hsl - hsla
+- rgb(0-255,0-255,0-255) - rgba
+- hsl(0-360,0-100,0-100) - hsla
+
+- [color system](https://www.w3schools.com/css/css_colors.asp)
+
+### Color system
+
+- Hue: is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue
+- Saturation: is a percentage value. 0% means a shade of gray, and 100% is the full color
+- Lightness: is also a percentage. 0% is black, 50% is neither light or dark, 100% is white
+- alpha: is a number between 0.0 (fully transparent) and 1.0 (not transparent at all)
 
 ![color-wheel](https://github.com/pour68/css-tutorials/blob/master/images/color-wheel-bg.jpg "color-wheel")
 
@@ -106,6 +115,8 @@ Uses three colors that are evenly spaced
 - Choose swatches near your base color: This color will support hover, active and focus states for the base color in actionable elements such as button, links and form elements.
 - Choose your darkest color and greys: These swatches are most often used an accents, backgrounds, or to give visual weight to a UI element in both dark and light interfaces.
 
+- [coolors](https://coolors.co/)
+
 ---
 
 ## Opacity
@@ -122,6 +133,8 @@ opacity: 0-1
 ---
 
 ## Box-Model
+
+orders: content > padding > border > outline > margin
 
 ### width - min-width - max-width
 
@@ -161,6 +174,7 @@ Margins are used to create space around elements, outside of any defined borders
 - margin-left
 - margin: top right bottom left | top right/left bottom | top/bottom right/left | top/right/bottom/left
 
+``` Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins. ```
 ``` margin collapse does not happen on left and right margins, Only top and bottom margins. ```
 
 ---
@@ -173,23 +187,23 @@ The CSS border properties allow you to specify the style, width, and color of an
 - border-style
 - border-color
 - border: width style color
-- border-direction
 - border-dirrection-width
 - border-dirrection-style
 - border-dirrection-color
+- border-direction: width style color
 
 ``` direction: top|right|bottom|left ```
 
 #### Border functionality
 
-- border: Sets all the border properties in one declaration
-- border-color: Sets the color of the four borders
-- border-style: Sets the style of the four borders
 - border-width: Sets the width of the four borders
-- border-direction: Sets all the direction border properties in one declaration
+- border-style: Sets the style of the four borders
+- border-color: Sets the color of the four borders
+- border: Sets all the border properties in one declaration
 - border-direction-width: Sets the width of the direction border
 - border-direction-style: Sets the style of the direction border
 - border-bottom-color: Sets the color of the direction border
+- border-direction: Sets all the direction border properties in one declaration
 
 ---
 
@@ -247,6 +261,11 @@ Defines how the width and height of an element are calculated: should they inclu
 - background-origin: content-box | padding-box | border-box
 - background: color image repeat attachment position
 - background-blend-mode: normal|multiply|screen|overlay|darken|lighten|color-dodge|saturation|color|luminosity
+
+- [wave background](https://getwaves.io/)
+- [background pattern](https://www.transparenttextures.com/)
+- [magic pattern generator](https://www.magicpattern.design/tools/css-backgrounds)
+- [svg background](https://www.svgbackgrounds.com/)
 
 ### Background functionality
 
@@ -642,6 +661,10 @@ selector {
   - background-image: linear-gradient(180deg, red, yellow);
 - background-image: repeating-linear-gradient(color-stop1, color-stop2, ...)
   - background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+
+- [gradient pattern](https://projects.verou.me/css3patterns/)
+- [egg gradients](https://www.eggradients.com/)
+- [gradient magic](https://www.gradientmagic.com/)
 
 ### Radial gradients
 
