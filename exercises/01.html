@@ -7,71 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> box sizing and color </title>
     <style>
-        .quote {
-            padding: 1rem;
+        .note {
+            background-color: #FFD5FF;
+            color: #000;
+            padding: 1.5rem 1rem;
+            margin-bottom: 1rem;
         }
 
-        .quote__item {
-            padding: 1rem;
-            margin-bottom: 0.25rem;
+        .note-border-left {
+            border-left: 5px solid purple;
+            border-top-left-radius: 8px;
         }
 
-        .quote__item--black {
-            background-color: black;
-            color: #fff;
-        }
-
-        .quote__item--midnightblue {
-            background-color: #000040;
-            color: #fff;
-        }
-
-        .quote__item--navyblue {
-            background-color: #000080;
-            color: #fff;
-        }
-
-        .quote__item--blue {
-            background-color: #0000FF;
-            color: #fff;
+        .note-border-top {
+            border-top: 3px solid purple;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="quote">
-        <div class="quote__list">
+    <div class="note note-border-left">
+        <p>
+            <q>Make it simple but not much simpler.</q>
+        </p>
+        <h3> - Albert Einstein </h3>
+    </div>
 
-            <div class="quote__item quote__item--black">
-                <p class="quote__description">
-                    <q>Make it simple but not much simpler.</q>
-                </p>
-                <h3 class="quote__author"> - Albert Einstein </h3>
-            </div>
-
-            <div class="quote__item quote__item--midnightblue">
-                <p class="quote__description">
-                    <q>The most beautiful things your can wear is confidence.</q>
-                </p>
-                <h3 class="quote__author"> - Blake Lively </h3>
-            </div>
-
-            <div class="quote__item quote__item--navyblue">
-                <p class="quote__description">
-                    <q>Beauty is not in the face, beauty is a light in the heart.</q>
-                </p>
-                <h3 class="quote__author"> - Khalil Gibran </h3>
-            </div>
-
-            <div class="quote__item quote__item--blue">
-                <p class="quote__description">
-                    <q>The purpose of our lives is to be happy.</q>
-                </p>
-                <h3 class="quote__author"> - Dalai Lama </h3>
-            </div>
-
-        </div>
+    <div class="note note-border-top">
+        <p>
+            <q>Make it simple but not much simpler.</q>
+        </p>
+        <h3> - Albert Einstein </h3>
     </div>
 
 </body>
