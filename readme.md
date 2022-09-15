@@ -255,10 +255,10 @@ Defines how the width and height of an element are calculated: should they inclu
 - background-color: color
 - background-image: url(address)
 - background-size: contain | cover | auto | width height
+- background-repeat: no-repeat | repeat-x | repeat-y | round | space
 - background-position: top | left | right | center | posX posY
 - background-attachment: local | scroll | fixed
-- background-repeat: no-repeat | repeat-x | repeat-y | round | space
-- background-clip: content-box | padding-box | border-box
+- background-clip: content-box | padding-box | border-box (D)
 - background-origin: content-box | padding-box | border-box
 - background: color image repeat attachment position
 - background-blend-mode: normal|multiply|screen|overlay|darken|lighten|color-dodge|saturation|color|luminosity
@@ -281,7 +281,7 @@ Defines how the width and height of an element are calculated: should they inclu
 
 ### Multiple background image
 
-``` #background-container { background-image: url(img_flwr.gif), url(paper.gif); background-position: right bottom, left top; background-repeat: no-repeat, repeat; } ```
+``` #background-container { background-image: url(flower.gif), url(paper.gif); background-position: right bottom, left top; background-repeat: no-repeat, repeat; } ```
 
 ---
 
@@ -293,7 +293,7 @@ Defines how the width and height of an element are calculated: should they inclu
 - direction: ltr | rtl
 - unicode-bidi: embed | bidi-override | isolated | isolated-override | plaintext;
 - vertical-align: baseline | sub | super | text-top | text-bottom
-- text-decoration: dashed | dotted | double | line-through | overline | underline | wavy | none
+- text-decoration: line-through | overline | underline | none
 - text-transform: uppercase | lowercase | capitalize
 - text-spacing
   - text-indent
@@ -303,6 +303,24 @@ Defines how the width and height of an element are calculated: should they inclu
   - white-space: normal(D) | nowrap | pre | pre-line | pre-wrap
 - text-shadow: h-shadow v-shadow blur color
 - writing-mode: horizontal-tb|vertical-rl|vertical-lr
+
+---
+
+## Icons
+
+- [Font awesome icons](https://fontawesome.com/icons)
+- [Bootstrap icons](https://icons.getbootstrap.com/)
+- [Material icons](https://www.w3schools.com/icons/google_icons_intro.asp)
+- [Box icons](boxicons.com)
+- [Remix icon](remixicon.com/)
+- [Ion icon](ionic.io/)
+
+---
+
+## Css directives
+
+@import "address";
+@charset "UTF-8";
 
 ---
 
@@ -336,24 +354,6 @@ Defines how the width and height of an element are calculated: should they inclu
   - Align product market brand
 - Font scalability
 - Loading time
-
----
-
-## Css directives
-
-@import "address";
-@charset "UTF-8";
-
----
-
-## Icons
-
-- [Font awesome icons](https://fontawesome.com/icons)
-- [Bootstrap icons](https://icons.getbootstrap.com/)
-- [Material icons](https://www.w3schools.com/icons/google_icons_intro.asp)
-- [Box icons](boxicons.com)
-- [Remix icon](remixicon.com/)
-- [Ion icon](ionic.io/)
 
 ---
 
