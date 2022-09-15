@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../favico.ico" type="image/x-icon" />
     <title> box sizing and color </title>
     <style>
         .note {
@@ -16,11 +17,27 @@
 
         .note-border-left {
             border-left: 5px solid purple;
-            border-top-left-radius: 8px;
+            border-top-left-radius: 0.5rem;
         }
 
         .note-border-top {
             border-top: 3px solid purple;
+            border-top-right-radius: 0.5rem;
+        }
+
+        .note-border-right {
+            border-right: 3px solid purple;
+            border-bottom-left-radius: 0.5rem;
+        }
+
+        .note-border-bottom {
+            border-bottom: 3px solid purple;
+            border-bottom-right-radius: 0.5rem;
+        }
+
+        .note-border {
+            border: 3px solid purple;
+            border-radius: 0.5rem;
         }
     </style>
 </head>
@@ -36,9 +53,31 @@
 
     <div class="note note-border-top">
         <p>
-            <q>Make it simple but not much simpler.</q>
+            <q>The purpose of our lives is to be happy.</q>
         </p>
-        <h3> - Albert Einstein </h3>
+        <h3> - John Lennon </h3>
+    </div>
+
+    <div class="note note-border-right">
+        <p>
+            <q>Get busy living or get busy dying.</q>
+        </p>
+        <h3> - Stephen King </h3>
+    </div>
+
+    <div class="note note-border-bottom">
+        <p>
+            <q>You only live once, but if you do it right, once is enough.</q>
+        </p>
+        <h3> - Mae West </h3>
+    </div>
+
+    <div class="note note-border">
+        <p>
+            <q>Many of life’s failures are people who did not realize how close they were to success when they
+                gave up</q>
+        </p>
+        <h3> - Thomas A. Edison </h3>
     </div>
 
 </body>
