@@ -473,12 +473,17 @@ accent-color
 - id
 - class
 - attribute
-  - The [attribute="value"] selector is used to select elements with a specified attribute and value.
-  - [attribute~="value"]: selector is used to select elements with an attribute value containing a specified word.(just space-separated word)
-  - The [attribute|="value"] selector is used to select elements with the specified attribute, whose value can be exactly the specified value, or the specified value followed by a hyphen (-).
-  - The [attribute^="value"] selector is used to select elements with the specified attribute, whose value starts with the specified value.
-  - The [attribute$="value"] selector is used to select elements whose attribute value ends with a specified value.
-  - The [attribute*="value"] selector is used to select elements whose attribute value contains a specified value.
+
+---
+
+## Attr selectors
+
+- The [attribute="value"] selector is used to select elements with a specified attribute and value.
+- [attribute~="value"]: selector is used to select elements with an attribute value containing a specified word.(just space-separated word)
+- The [attribute|="value"] selector is used to select elements with the specified attribute, whose value can be exactly the specified value, or the specified value followed by a hyphen (-).
+- The [attribute^="value"] selector is used to select elements with the specified attribute, whose value starts with the specified value.
+- The [attribute$="value"] selector is used to select elements whose attribute value ends with a specified value.
+- The [attribute*="value"] selector is used to select elements whose attribute value contains a specified value.
 
 ---
 
