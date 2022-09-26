@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        :root {
+            --red-color: tomato;
+            --yellow-color: yellow;
+            --fs-lg: 1.5rem;
+            --fs-md: 1.2rem;
+        }
+
+        .container p:first-child {
+            color: var(--red-color);
+            font-size: var(--fs-lg);
+        }
+
+        .container p:last-child {
+            color: var(--yellow-color);
+            font-size: var(--fs-md);
+        }
+    </style>
+    <title> variables </title>
+</head>
+
+<body>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    </div>
+
+</body>
+
+</html>

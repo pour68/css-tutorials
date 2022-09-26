@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        .content::before {
+            content: "♣";
+            font-size: 2.5rem;
+        }
+
+        .content::after {
+            content: "♣";
+            font-size: 5rem;
+            color: red;
+        }
+
+        .description::first-line {
+            font-size: 2.5rem;
+        }
+
+        ::selection {
+            background-color: black;
+            color: red;
+        }
+    </style>
+    <title> pseudo element </title>
+</head>
+
+<body>
+
+    <!-- <div class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore eum voluptas rerum optio harum
+        ullam sed quis
+        porro magnam nisi architecto dicta magni doloribus, placeat libero tenetur velit distinctio minima!</div> -->
+
+    <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ut voluptatem tempore incidunt eligendi quo
+        facere expedita sequi, consequuntur fuga voluptatum dignissimos dicta? Molestiae culpa impedit totam consectetur
+        accusamus excepturi.
+    </p>
+
+</body>
+
+</html>

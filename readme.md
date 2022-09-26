@@ -331,7 +331,7 @@ Defines how the width and height of an element are calculated: should they inclu
   - web safe fonts
     - fallback
     - Arial (sans-serif) - Verdana (sans-serif) - Tahoma (sans-serif) - Trebuchet MS (sans-serif) - Times New Roman (serif) - Georgia (serif) - Garamond (serif) - Courier New (monospace) - Brush Script MT (cursive)
-- font-style: normal | italic | oblique
+- font-style: normal (D) | italic | oblique
 - font-size: 16px | 1rem | 1em | 10vw
 - font-weight: lighter | normal | bold | bolder | 100-900
 - font-variant: normal | small-caps
@@ -407,7 +407,43 @@ cursor: default | crosshair | e-resize | help | move | n-resize | ne-resize | nw
 
 - overflow-x
 - overflow-y
-- overflow: hidden | scroll | visible
+- overflow: hidden | scroll | visible (D)
+
+---
+
+## Variable
+
+:root {
+    --white-color: #fff;
+}
+
+selector {
+    color: var(--white-color);
+}
+
+---
+
+## Position
+
+position: static | relative | absolute | fixed | sticky
+
+---
+
+## Z-index
+
+---
+
+## Float
+
+float: none | left | right | inline-start | inline-end;
+clear: left | right | both
+
+---
+
+## Image Spirits
+
+[icons](https://www.flaticon.com/)
+[Sprite generator](https://www.toptal.com/developers/css/sprite-generator/)
 
 ---
 
@@ -423,34 +459,11 @@ visibility: visible (D) | hidden
 
 ---
 
-## Position
-
-position: static | relative | absolute | fixed | sticky
-
----
-
-## Z-index
-
----
-
 ## Clip path
 
 clip-path
 
 [Clip path tool](https://bennettfeely.com/clippy/)
-
----
-
-## Float
-
-float: none | left | right | inline-start | inline-end;
-clear: left | right | both
-
----
-
-## Image Spirits
-
-[Sprite generator](https://www.toptal.com/developers/css/sprite-generator/)
 
 ---
 
@@ -582,18 +595,6 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 @keyframes animation-name {
   from {}
   to   {}
-}
-
----
-
-## Variable
-
-:root {
-    --white-color: #fff;
-}
-
-selector {
-    color: var(--white-color);
 }
 
 ---

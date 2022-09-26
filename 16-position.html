@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-color: yellow;
+        }
+
+        /* .circle {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border-radius: 50%;
+        } */
+
+        .square {
+            position: sticky;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+        }
+
+        .circle-sm {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+            background-color: purple;
+            border-radius: 50%;
+            z-index: 10;
+        }
+    </style>
+    <title> Positioing </title>
+</head>
+
+<body>
+
+    <div class="circle-sm"></div>
+
+    <div class="container">
+        <div class="circle"></div>
+
+        <div class="square"></div>
+    </div>
+
+    <div class="container"></div>
+
+</body>
+
+</html>

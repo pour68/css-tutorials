@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            caption-side: bottom;
+            border-spacing: 5px;
+            border: 1px solid black;
+            /* border-collapse: collapse; */
+            table-layout: auto;
+        }
+
+        table tr {
+            text-align: center;
+        }
+
+        table tr:nth-child(2n+ 1) {
+            background-color: lightgray;
+        }
+
+        table th,
+        table td {
+            border: 1px solid black;
+            padding: 0.5rem;
+        }
+    </style>
+    <title> table </title>
+</head>
+
+<body>
+
+    <div class="table-container">
+        <table>
+            <caption>Customers</caption>
+            <tr>
+                <th>ID</th>
+                <th>FullName</th>
+                <th>PhoneNumber</th>
+                <th>Address</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Pouria Nayeb</td>
+                <td>09354425459</td>
+                <td>Iran, Tehran, Moallem st.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Aria Zamani</td>
+                <td>09108173309</td>
+                <td>Iran, Tehran, Gheitarieh st.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Pouria Nayeb</td>
+                <td>09354425459</td>
+                <td>Iran, Tehran, Moallem st.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Aria Zamani</td>
+                <td>09108173309</td>
+                <td>Iran, Tehran, Gheitarieh st.</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
