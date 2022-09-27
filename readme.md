@@ -12,26 +12,18 @@
 
 ![authors](https://github.com/pour68/css-tutorials/blob/master/images/authors.jpg "authors")
 
----
-
 ## CSS definition
 
 Cascading stylesheet
-
----
 
 ## CSS analogy
 
 - Interface of building
 - Interface of human-body
 
----
-
 ## CSS file extension
 
 .css
-
----
 
 ## Selectors
 
@@ -41,15 +33,11 @@ Cascading stylesheet
 - Id
 - Attribute
 
----
-
 ## Syntax
 
 selector {
     property: value;
 }
-
----
 
 ## CSS reference methods
 
@@ -57,21 +45,15 @@ selector {
 - internal
 - external
 
----
-
 ## override CSS property
 
 !important
 
 ``` The !important rule in CSS is used to add more importance to a property/value than normal. ```
 
----
-
 ## Comments
 
 - ``` /*comment*/ ```
-
----
 
 ## Color
 
@@ -118,20 +100,14 @@ Uses three colors that are evenly spaced
 - [coolors](https://coolors.co/)
 - [adobe color wheel](https://color.adobe.com/create/color-wheel/)
 
----
-
 ## Opacity
 
 opacity: 0-1
-
----
 
 ## Units
 
 - absolute (px cm inch)
 - relative (% vh vw em rem)
-
----
 
 ## Box-Model
 
@@ -163,8 +139,6 @@ Padding is used to create space around an element's content, inside of any defin
 - padding-left
 - padding: top right bottom left | top right/left bottom | top/bottom right/left | top/right/bottom/left
 
----
-
 ### Margin
 
 Margins are used to create space around elements, outside of any defined borders.
@@ -177,8 +151,6 @@ Margins are used to create space around elements, outside of any defined borders
 
 ``` Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins. ```
 ``` margin collapse does not happen on left and right margins, Only top and bottom margins. ```
-
----
 
 ### Border
 
@@ -206,8 +178,6 @@ The CSS border properties allow you to specify the style, width, and color of an
 - border-bottom-color: Sets the color of the direction border
 - border-direction: Sets all the direction border properties in one declaration
 
----
-
 ### Outline
 
 An outline is a line drawn outside the element's border.
@@ -228,8 +198,6 @@ An outline is a line drawn outside the element's border.
 
 ``` None of the other outline properties will have ANY effect unless the outline-style property is set! ```
 
----
-
 ## Rounded corners
 
 border-radius: top-left top-right bottom-right bottom-left
@@ -240,15 +208,11 @@ border-vdirection-hdirection-radius: size
 - border-radius: A shorthand property for setting all the four border-*-*-radius properties
 - border-vdirection-hdirection-radius: Defines the shape of the border of the vdirection-hdirection corner
 
----
-
 ## Box-sizing
 
 Defines how the width and height of an element are calculated: should they include padding and borders, or not.
 
 - box-sizing: border-box
-
----
 
 ## Background
 
@@ -283,8 +247,6 @@ Defines how the width and height of an element are calculated: should they inclu
 
 ``` #background-container { background-image: url(flower.gif), url(paper.gif); background-position: right bottom, left top; background-repeat: no-repeat, repeat; } ```
 
----
-
 ## Text
 
 - color
@@ -304,8 +266,6 @@ Defines how the width and height of an element are calculated: should they inclu
 - text-shadow: h-shadow v-shadow blur color
 - writing-mode: horizontal-tb|vertical-rl|vertical-lr
 
----
-
 ## Icons
 
 - [Font awesome icons](https://fontawesome.com/icons)
@@ -315,14 +275,10 @@ Defines how the width and height of an element are calculated: should they inclu
 - [Remix icon](remixicon.com/)
 - [Ion icon](ionic.io/)
 
----
-
 ## Css directives
 
 @import "address";
 @charset "UTF-8";
-
----
 
 ## Fonts
 
@@ -343,8 +299,6 @@ Defines how the width and height of an element are calculated: should they inclu
 - [Google fonts](https://fonts.google.com/)
 - [font pair](https://www.pagecloud.com/blog/best-google-fonts-pairings)
 
----
-
 ## Font theory
 
 - Choose a place to find your fonts
@@ -355,8 +309,6 @@ Defines how the width and height of an element are calculated: should they inclu
 - Font scalability
 - Loading time
 
----
-
 ## Pseudo class
 
 :hover - :focus - :first-child - :last-child - :nth-child(even|odd|formula) - :nth-of-type(n)  - ...
@@ -365,20 +317,14 @@ q:lang(no) {
   quotes: "~" "~";
 }
 
----
-
 ## Links
 
 :link - :visited - :hover - :active
 cursor: default | crosshair | e-resize | help | move | n-resize | ne-resize | nw-resize | pointer | progress | s-resize | se-resize | sw-resize | text | w-resize | wait
 
----
-
 ## Pseudo element
 
 ::before - ::after - ::first-letter - ::first-line - ::selection
-
----
 
 ## List
 
@@ -387,8 +333,6 @@ cursor: default | crosshair | e-resize | help | move | n-resize | ne-resize | nw
 - list-style-position: inside | outside (D)
 
 - The list-style-position property specifies the position of the list-item markers (bullet points).
-
----
 
 ## Table
 
@@ -401,15 +345,11 @@ cursor: default | crosshair | e-resize | help | move | n-resize | ne-resize | nw
 - border-spacing: Specifies the distance between the borders of adjacent cells
 - table-layout: Sets the layout algorithm to be used for a table
 
----
-
 ## Overflow
 
 - overflow-x
 - overflow-y
 - overflow: hidden | scroll | visible (D)
-
----
 
 ## Variable
 
@@ -421,43 +361,29 @@ selector {
     color: var(--white-color);
 }
 
----
-
 ## Position
 
 position: static | relative | absolute | fixed | sticky
 
----
-
 ## Z-index
-
----
 
 ## Float
 
 float: none | left | right | inline-start | inline-end;
 clear: left | right | both
 
----
-
 ## Image Spirits
 
 [icons](https://www.flaticon.com/)
 [Sprite generator](https://www.toptal.com/developers/css/sprite-generator/)
 
----
-
 ## Display
 
 display: inline - inline-block - block - flex - grid - table
 
----
-
 ## Visibility
 
 visibility: visible (D) | hidden
-
----
 
 ## Clip path
 
@@ -465,20 +391,14 @@ clip-path
 
 [Clip path tool](https://bennettfeely.com/clippy/)
 
----
-
 ## Filter
 
 filter: none | blur(px) | brightness(%) | contrast(%) | drop-shadow(h-shadow v-shadow blur spread color) | grayscale(%) | hue-rotate(deg) | invert(%) | opacity(%) | saturate(%) | sepia(%) | url();
-
----
 
 ## Forms
 
 resize: none
 accent-color
-
----
 
 ## Specificity
 
@@ -486,8 +406,6 @@ accent-color
 - id
 - class
 - attribute
-
----
 
 ## Attr selectors
 
@@ -498,20 +416,14 @@ accent-color
 - The [attribute$="value"] selector is used to select elements whose attribute value ends with a specified value.
 - The [attribute*="value"] selector is used to select elements whose attribute value contains a specified value.
 
----
-
 ## Math functions
 
 - calc()
 - min() - max()
 
----
-
 ## Shadows
 
 box-shadow: h-shadow v-shadow blur padding color;
-
----
 
 ## Object-fit
 
@@ -519,15 +431,11 @@ object-fit: fill (D) | contain | cover | none | scale-down
 
 - object-fit: Specifies how an img or video should be resized to fit its container
 
----
-
 ## Object-position
 
 object-position: 50% 50%; center of image till end
 
 - object-position: Specifies how an img or video should be positioned with x/y coordinates inside its "own content box"
-
----
 
 ## Columns
 
@@ -543,8 +451,6 @@ object-position: 50% 50%; center of image till end
 - column: column-width column-count
 
 - column-span: Specifies how many columns an element should span across
-
----
 
 ## CSS 2D and 3D transforms
 
@@ -568,8 +474,6 @@ object-position: 50% 50%; center of image till end
 - perspective-origin: Specifies the bottom position of 3D elements
 - backface-visibility: Defines whether or not an element should be visible when not facing the screen
 
----
-
 ## Transition
 
 - transition-delay
@@ -577,8 +481,6 @@ object-position: 50% 50%; center of image till end
 - transition-property
 - transition-timing-function: linear | ease | ease-in - ease-out - ease-in-out - cubic-bezier(n,n,n,n)
 - transition: property duration timing-function delay
-
----
 
 ## Animations
 
@@ -597,8 +499,6 @@ animation: name duration timing-function delay iteration-count direction fill-mo
   to   {}
 }
 
----
-
 ## Backdrop-filter
 
 - blur(px)
@@ -611,8 +511,6 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 - opacity(%)
 - sepia(%)
 - saturate(%)
-
----
 
 ## FlexBox
 
@@ -630,8 +528,6 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 - align-self
 - justify-self
 
----
-
 ## Grid
 
 - grid-row-gap - grid-column-gap - grid-gap
@@ -647,14 +543,10 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 - align-self
 - justify-self
 
----
-
 ## Media
 
 @media (max-width: 768px) {}
 @media (min-width: 768px) {}
-
----
 
 ## Gradients
 
@@ -694,13 +586,9 @@ animation: name duration timing-function delay iteration-count direction fill-mo
   - background-image: repeating-conic-gradient(red 10%, yellow 20%);
   - background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
 
----
-
 ## Image Reflection
 
 -webkit-box-reflect: below | above | left | right
-
----
 
 ## Masking
 
@@ -711,8 +599,6 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 - mask-repeat: no-repeat | repeat
 - mask-size: %
 
----
-
 ## Border image
 
 - border-image-source: url(address);
@@ -721,8 +607,6 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 - border-image-outset: length| number
 - border-image-repeat: stretch | repeat | round | space
 - border-image: source slice width outset repeat|initial|inherit
-
----
 
 ## Counters
 
@@ -736,8 +620,6 @@ li::before {
   counter-increment: section;
 }
 
----
-
 ## Combinators
 
 - parent child: The descendant selector matches all elements that are descendants of a specified element.
@@ -745,23 +627,17 @@ li::before {
 - element + element: The adjacent sibling selector is used to select an element that is directly after another specific element.
 - element ~ element: The general sibling selector selects all elements that are next siblings of a specified element.
 
----
-
 ## User select
 
 ``` -webkit-user-select: none; /*Safari*/ ```
 ``` -ms-user-select: none; /*IE 10 and IE 11*/ ```
 ``` user-select: none; /*Standard syntax*/ ```
 
----
-
 ## Pointer events
 
 - pointer-events: none| auto
 
 - Set whether or not an element should react to pointer events
-
----
 
 ## CSS validation
 
