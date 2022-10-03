@@ -391,30 +391,12 @@ clip-path
 
 [Clip path tool](https://bennettfeely.com/clippy/)
 
-## Filter
-
-filter: none | blur(px) | brightness(%) | contrast(%) | drop-shadow(h-shadow v-shadow blur spread color) | grayscale(%) | hue-rotate(deg) | invert(%) | opacity(%) | saturate(%) | sepia(%) | url();
-
-## Forms
-
-resize: none
-accent-color
-
 ## Specificity
 
-- general selector
 - id
 - class
 - attribute
-
-## Attr selectors
-
-- The [attribute="value"] selector is used to select elements with a specified attribute and value.
-- [attribute~="value"]: selector is used to select elements with an attribute value containing a specified word.(just space-separated word)
-- The [attribute|="value"] selector is used to select elements with the specified attribute, whose value can be exactly the specified value, or the specified value followed by a hyphen (-).
-- The [attribute^="value"] selector is used to select elements with the specified attribute, whose value starts with the specified value.
-- The [attribute$="value"] selector is used to select elements whose attribute value ends with a specified value.
-- The [attribute*="value"] selector is used to select elements whose attribute value contains a specified value.
+- general selector
 
 ## Math functions
 
@@ -425,32 +407,21 @@ accent-color
 
 box-shadow: h-shadow v-shadow blur padding color;
 
-## Object-fit
+- [box shadow generator](https://cssgenerator.org/box-shadow-css-generator.html)
 
-object-fit: fill (D) | contain | cover | none | scale-down
+## Filter
 
-- object-fit: Specifies how an img or video should be resized to fit its container
+filter: none | blur(px) | brightness(%) | contrast(%) | drop-shadow(h-shadow v-shadow blur spread color) | grayscale(%) | hue-rotate(deg) | invert(%) | opacity(%) | saturate(%) | sepia(%) | url();
 
-## Object-position
+- [filter generator](https://cssgenerator.org/filter-css-generator.html)
 
-object-position: 50% 50%; center of image till end
+## Transition
 
-- object-position: Specifies how an img or video should be positioned with x/y coordinates inside its "own content box"
-
-## Columns
-
-- column-count: number
-- column-fill: auto | balance
-- column-gap: 1rem
-- column-rule: width style color
-- column-rule-width: 1px
-- column-rule-style: solid
-- column-rule-color: skyblue
-- column-width
-- column-span: all | none
-- column: column-width column-count
-
-- column-span: Specifies how many columns an element should span across
+- transition-delay
+- transition-duration
+- transition-property
+- transition-timing-function: linear | ease | ease-in - ease-out - ease-in-out - cubic-bezier(n,n,n,n)
+- transition: property duration timing-function delay
 
 ## CSS 2D and 3D transforms
 
@@ -474,14 +445,6 @@ object-position: 50% 50%; center of image till end
 - perspective-origin: Specifies the bottom position of 3D elements
 - backface-visibility: Defines whether or not an element should be visible when not facing the screen
 
-## Transition
-
-- transition-delay
-- transition-duration
-- transition-property
-- transition-timing-function: linear | ease | ease-in - ease-out - ease-in-out - cubic-bezier(n,n,n,n)
-- transition: property duration timing-function delay
-
 ## Animations
 
 animation-name: name
@@ -498,19 +461,6 @@ animation: name duration timing-function delay iteration-count direction fill-mo
   from {}
   to   {}
 }
-
-## Backdrop-filter
-
-- blur(px)
-- brightness(%)
-- contrast(%)
-- drop-shadow(h-shadow v-shadow blur color)
-- grayscale(%)
-- hue-rotate(deg)
-- invert(%)
-- opacity(%)
-- sepia(%)
-- saturate(%)
 
 ## FlexBox
 
@@ -586,6 +536,31 @@ animation: name duration timing-function delay iteration-count direction fill-mo
   - background-image: repeating-conic-gradient(red 10%, yellow 20%);
   - background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
 
+## Object-fit
+
+object-fit: fill (D) | contain | cover | none | scale-down
+
+- object-fit: Specifies how an img or video should be resized to fit its container
+
+## Object-position
+
+object-position: 50% 50%; center of image till end
+
+- object-position: Specifies how an img or video should be positioned with x/y coordinates inside its "own content box"
+
+## Backdrop-filter
+
+- blur(px)
+- brightness(%)
+- contrast(%)
+- drop-shadow(h-shadow v-shadow blur color)
+- grayscale(%)
+- hue-rotate(deg)
+- invert(%)
+- opacity(%)
+- sepia(%)
+- saturate(%)
+
 ## Image Reflection
 
 -webkit-box-reflect: below | above | left | right
@@ -598,6 +573,26 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 - mask-position: left right top center bottom | direction direction | posX posY | % %
 - mask-repeat: no-repeat | repeat
 - mask-size: %
+
+## Forms
+
+resize: none
+accent-color
+
+## Columns
+
+- column-count: number
+- column-fill: auto | balance
+- column-gap: 1rem
+- column-rule: width style color
+- column-rule-width: 1px
+- column-rule-style: solid
+- column-rule-color: skyblue
+- column-width
+- column-span: all | none
+- column: column-width column-count
+
+- column-span: Specifies how many columns an element should span across
 
 ## Border image
 
@@ -619,6 +614,15 @@ li::before {
   content: counters(section,".") " ";
   counter-increment: section;
 }
+
+## Attr selectors
+
+- The [attribute="value"] selector is used to select elements with a specified attribute and value.
+- [attribute~="value"]: selector is used to select elements with an attribute value containing a specified word.(just space-separated word)
+- The [attribute|="value"] selector is used to select elements with the specified attribute, whose value can be exactly the specified value, or the specified value followed by a hyphen (-).
+- The [attribute^="value"] selector is used to select elements with the specified attribute, whose value starts with the specified value.
+- The [attribute$="value"] selector is used to select elements whose attribute value ends with a specified value.
+- The [attribute*="value"] selector is used to select elements whose attribute value contains a specified value.
 
 ## Combinators
 
