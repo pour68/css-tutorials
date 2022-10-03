@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .left {
+            flex-basis: 50%;
+            align-self: center;
+            padding: 0 1rem;
+        }
+
+        .left h6 {
+            display: inline-block;
+            font-size: 0.6rem;
+            background-color: #000;
+            color: #fff;
+            padding: 0.25rem 0.5rem;
+        }
+
+        .left h1 {
+            font-size: 2.5rem;
+        }
+
+        .left p {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .right {
+            flex-basis: 50%;
+            background-image: url(images/jungle-from-top.jpg);
+            background-size: cover;
+            transition: all 1s linear;
+        }
+
+        .right:hover {
+            filter: blur(1px);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left,
+            .right {
+                height: 50vh;
+            }
+        }
+    </style>
+    <title> flexbox </title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left">
+            <h6>Nature is for all humans</h6>
+            <h1>Jungle is a place for fun</h1>
+            <p>Have a fun, adventure in jungle with talented people who care about environment, Have a fun, adventure in
+                jungle with talented peopleut environment, fun, adventure in jungle with talented
+                people who care about environment.</p>
+        </div>
+        <div class="right"></div>
+    </div>
+
+</body>
+
+</html>
