@@ -17,8 +17,12 @@
             color: red;
         }
 
-        .description::first-line {
+        .description::first-letter {
             font-size: 2.5rem;
+        }
+
+        ul li::marker {
+            color: pink;
         }
 
         ::selection {
@@ -31,15 +35,21 @@
 
 <body>
 
-    <!-- <div class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore eum voluptas rerum optio harum
+    <div class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore eum voluptas rerum optio harum
         ullam sed quis
-        porro magnam nisi architecto dicta magni doloribus, placeat libero tenetur velit distinctio minima!</div> -->
+        porro magnam nisi architecto dicta magni doloribus, placeat libero tenetur velit distinctio minima!</div>
 
     <p class="description">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ut voluptatem tempore incidunt eligendi quo
         facere expedita sequi, consequuntur fuga voluptatum dignissimos dicta? Molestiae culpa impedit totam consectetur
         accusamus excepturi.
     </p>
+
+    <ul>
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+    </ul>
 
 </body>
 

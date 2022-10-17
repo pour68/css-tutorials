@@ -39,6 +39,13 @@ selector {
     property: value;
 }
 
+## Specificity
+
+- id
+- class
+- attribute
+- general selector
+
 ## CSS reference methods
 
 - inline
@@ -160,9 +167,9 @@ The CSS border properties allow you to specify the style, width, and color of an
 - border-style
 - border-color
 - border: width style color
-- border-dirrection-width
-- border-dirrection-style
-- border-dirrection-color
+- border-direction-width
+- border-direction-style
+- border-direction-color
 - border-direction: width style color
 
 ``` direction: top|right|bottom|left ```
@@ -223,7 +230,7 @@ Defines how the width and height of an element are calculated: should they inclu
 - background-position: top | left | right | center | posX posY
 - background-attachment: local | scroll | fixed
 - background-clip: content-box | padding-box | border-box (D)
-- background-origin: content-box | padding-box | border-box
+- background-origin: content-box | padding-box (D) | border-box
 - background: color image repeat attachment position
 - background-blend-mode: normal|multiply|screen|overlay|darken|lighten|color-dodge|saturation|color|luminosity
 
@@ -299,6 +306,8 @@ Defines how the width and height of an element are calculated: should they inclu
 - [Google fonts](https://fonts.google.com/)
 - [font pair](https://www.pagecloud.com/blog/best-google-fonts-pairings)
 
+font-variant: specifies whether or not a text should be displayed in a small-caps font.
+
 ## Font theory
 
 - Choose a place to find your fonts
@@ -319,16 +328,16 @@ q:lang(no) {
 
 ## Links
 
-:link - :visited - :hover - :active
+:link - :visited - :hover - :active - :first-child - :last-child - nth-child() - nth-of-type()
 cursor: default | crosshair | e-resize | help | move | n-resize | ne-resize | nw-resize | pointer | progress | s-resize | se-resize | sw-resize | text | w-resize | wait
 
 ## Pseudo element
 
-::before - ::after - ::first-letter - ::first-line - ::selection
+::before - ::after - ::first-letter - ::first-line - ::selection - ::marker
 
 ## List
 
-- list-style-type: disk | circle | square | none | armenian | lower-alpha | lower-green | lower-latin| lower-roman | upper-alpha | upper-latin | upper-roman | georgian | symbols()
+- list-style-type: disk | circle | square | none | armenian | lower-alpha | lower-green | lower-latin | lower-roman | upper-alpha | upper-latin | upper-roman | georgian | symbols()
 - list-style-image: url(address)
 - list-style-position: inside | outside (D)
 
@@ -351,6 +360,12 @@ cursor: default | crosshair | e-resize | help | move | n-resize | ne-resize | nw
 - overflow-y
 - overflow: hidden | scroll | visible (D)
 
+## Position
+
+position: static | relative | absolute | fixed | sticky
+
+## Z-index
+
 ## Variable
 
 :root {
@@ -360,12 +375,6 @@ cursor: default | crosshair | e-resize | help | move | n-resize | ne-resize | nw
 selector {
     color: var(--white-color);
 }
-
-## Position
-
-position: static | relative | absolute | fixed | sticky
-
-## Z-index
 
 ## Float
 
@@ -390,13 +399,6 @@ visibility: visible (D) | hidden
 clip-path
 
 [Clip path tool](https://bennettfeely.com/clippy/)
-
-## Specificity
-
-- id
-- class
-- attribute
-- general selector
 
 ## Math functions
 
