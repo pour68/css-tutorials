@@ -318,6 +318,16 @@ font-variant: specifies whether or not a text should be displayed in a small-cap
 - Font scalability
 - Loading time
 
+## Add custom font to webpage
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("CustomFont.eot");
+  src: url("CustomFont.woff") format("woff"),
+  url("CustomFont.otf") format("opentype"),
+  url("CustomFont.svg#filename") format("svg");
+}
+
 ## Pseudo class
 
 :hover - :focus - :first-child - :last-child - :nth-child(even|odd|formula) - :nth-of-type(n)  - ...

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .section::before {
+            content: "";
+            position: absolute;
+            left: -28%;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            background: hsla(0, 0%, 100%, .1);
+            -webkit-transform: skewX(-25deg);
+            -ms-transform: skewX(-25deg);
+            transform: skewX(-25deg);
+        }
+
+        .section {
+            width: 100%;
+            height: 100vh;
+            background: -webkit-linear-gradient(left, #7250d5, #aa47a5 50%, #f43a67 99%);
+            background: linear-gradient(90deg, #7250d5 0, #aa47a5 50%, #f43a67 99%);
+            clip-path: polygon(0 0, 100% 0, 98% 81%, 0 100%);
+            overflow: hidden;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="section"></div>
+
+</body>
+
+</html>
